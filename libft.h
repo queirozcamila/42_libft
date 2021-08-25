@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/24 18:34:09 by cqueiroz          #+#    #+#             */
-/*   Updated: 2021/08/25 13:15:55 by cqueiroz         ###   ########.fr       */
+/*   Created: 2021/08/25 16:32:02 by cqueiroz          #+#    #+#             */
+/*   Updated: 2021/08/25 16:32:06 by cqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
-{
-	return (c >= '0' && c <= '9');
-}
+#include <stdlib.h>
+#include <unistd.h>
+
+int ft_isalpha(char c);
+int ft_isdigit(char c);

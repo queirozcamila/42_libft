@@ -6,12 +6,12 @@
 /*   By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 12:52:54 by cqueiroz          #+#    #+#             */
-/*   Updated: 2021/08/25 12:59:45 by cqueiroz         ###   ########.fr       */
+/*   Updated: 2021/08/25 16:35:06 by cqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha (char c)
+int ft_isalpha (int c)
 {
-	return(((c >= 'a') && (c <= 'z'))
-		|| ((c >='A') && (c >= 'Z')))
+	return (((c >= 'a') && (c <= 'z'))
+		|| ((c >='A') && (c >= 'Z')));
 }
