@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 16:32:02 by cqueiroz          #+#    #+#             */
-/*   Updated: 2021/08/25 17:26:19 by cqueiroz         ###   ########.fr       */
+/*   Created: 2021/08/25 18:13:53 by cqueiroz          #+#    #+#             */
+/*   Updated: 2021/08/25 18:15:17 by cqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <unistd.h>
-
-int ft_isalnum(int c);
-int ft_isalpha(int c);
-int ft_isascii(int c);
-int ft_isdigit(int c);
-int ft_isprint(int c);
+int ft_tolower(int c)
+{
+	if(c >= 65 && c <= 90)
+		c = c + 32;
+	return(c);
+}
