@@ -6,9 +6,13 @@
 /*   By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/25 16:32:02 by cqueiroz          #+#    #+#             */
-/*   Updated: 2021/08/25 17:26:19 by cqueiroz         ###   ########.fr       */
+/*   Updated: 2021/08/28 15:09:10 by cqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//o ifndef verifica se não houve definição essa variavel global anteriormente
+#ifndef LIBFT_H
+#define LIBFT_H
 
 #include <stdlib.h>
 #include <unistd.h>
@@ -18,3 +22,7 @@ int ft_isalpha(int c);
 int ft_isascii(int c);
 int ft_isdigit(int c);
 int ft_isprint(int c);
+int ft_tolower(int c);
+int ft_toupper(int c);
+
+#endif
