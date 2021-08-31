@@ -6,7 +6,7 @@
 #    By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/27 11:28:18 by cqueiroz          #+#    #+#              #
-#    Updated: 2021/08/28 15:16:00 by cqueiroz         ###   ########.fr        #
+#    Updated: 2021/08/31 10:45:42 by cqueiroz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ NAME 	= libft.a
 CC	= clang
 
 $(NAME):
+#cria os arquivos objetos (.0)
 	gcc -I . ${TAGS} -c ${FILES}
 	ar rcs ${NAME} ${OBJS}
 
@@ -42,6 +43,6 @@ fclean: clean
 re: fclean all
 
 teste: re
-	gcc ${TAGS} main.c -L . -lft
+	gcc ${TAGS} main.c -L. -lft
 
 .PHONY: all clean fclean re run

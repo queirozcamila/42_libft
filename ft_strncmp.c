@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/28 13:11:47 by cqueiroz          #+#    #+#             */
-/*   Updated: 2021/08/31 11:15:44 by cqueiroz         ###   ########.fr       */
+/*   Created: 2021/08/30 17:49:21 by cqueiroz          #+#    #+#             */
+/*   Updated: 2021/08/30 17:49:39 by cqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int main(void)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	ft_isalpha(20);
-	ft_isascii(10);
-	ft_isdigit(2);
-	ft_isprint(50);
-	ft_tolower(6);
-	ft_toupper(15);
-	ft_isalnum(6);
+	unsigned int	i;
 
-	return(0);
+	i = 0;
+	while (i < n && (s1[i] != 0 || s2[i] != 0))
+	{
+		if (s1[i] > s2[i])
+		{
+			return (1);
+		}
+		else if (s1[i] < s2[i])
+		{
+			return (-1);
+		}
+		i++;
+	}
+	return (0);
 }
