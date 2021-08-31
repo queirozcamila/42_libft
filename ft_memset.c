@@ -6,11 +6,11 @@
 /*   By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 11:07:25 by cqueiroz          #+#    #+#             */
-/*   Updated: 2021/08/31 11:14:23 by cqueiroz         ###   ########.fr       */
+/*   Updated: 2021/08/31 13:28:22 by cqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *memset (void *str, int c, size_t n)
+void *ft_memset (void *str, int c, size_t n)
 {
 	unsigned char *aux;
 	size_t i;

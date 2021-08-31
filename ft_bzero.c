@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cqueiroz <cqueiroz@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 17:49:21 by cqueiroz          #+#    #+#             */
-/*   Updated: 2021/08/31 11:35:30 by cqueiroz         ###   ########.fr       */
+/*   Created: 2021/08/31 15:17:05 by cqueiroz          #+#    #+#             */
+/*   Updated: 2021/08/31 15:19:40 by cqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//REFAZER ESSE
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
-{
-	unsigned int	i;
+#include "libft.h"
 
-	i = 0;
-	while (i < n && (s1[i] != 0 || s2[i] != 0))
-	{
-		if (s1[i] > s2[i])
-		{
-			return (1);
-		}
-		else if (s1[i] < s2[i])
-		{
-			return (-1);
-		}
-		i++;
-	}
-	return (0);
+void	ft_bzero(void *s, size_t n)
+{
+	ft_memset (s, 0, n);
 }
